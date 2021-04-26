@@ -1,0 +1,389 @@
+html{
+    overflow: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header */
+
+.mainHeader{
+    background-color: rgba(0,00,0,0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.haeder_inline ul{
+    padding: 0 20px;
+    list-style: none;
+    max-width: 980px;
+    height: 7vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.haeder_inline ul li{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0 10px;
+}
+
+.haeder_inline ul li a{
+    text-decoration: none;
+    color: #d1d1d1;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .4s;
+}
+
+.haeder_inline ul li a i{
+    font-size: 20px;
+}
+
+.haeder_inline ul li:hover a{
+    color: white;
+}
+
+/* down header info COVID-19 */
+
+.main_down_header{
+    position: relative;
+    top: 7vh;
+}
+
+.down_info_covid-19_header{
+    width: 100%;
+    background-color: #0071e3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down_info_covid-19_header ul{
+    padding: 0;
+    list-style: none;
+    width: 80%;
+}
+
+.down_info_covid-19_header ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.down_info_covid-19_header ul li:hover a{
+    text-decoration: underline;
+    font-size: 14.9px;
+}
+
+/* down header info for online shop */
+
+.down_header_info{
+    width: 100%;
+    background-color: #ececec;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down_header_info span{
+    padding: 10px 0px;
+    font-size: 15px;
+    font-weight: 450;
+    width: 80%;
+}
+
+.down_header_info span a{
+    text-decoration: none;
+    color: #06c;
+    transition: .3s;
+}
+
+.down_header_info span a:hover{
+    text-decoration: underline;
+}
+
+.list{
+    width: 100%;
+}
+
+.a1{
+    display: none;
+}
+
+
+/* mian */
+main{
+    position: relative;
+    top: 7vh;
+}
+
+.main_title{
+    margin: 0 auto;
+    width: 33%;
+    text-align: center;
+}
+
+.main_title h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.main_title h2{
+    font-size: 33px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.main_title p{
+    color: gray;
+    font-size: 19px;
+    font-weight: 400;
+}
+.main_title h3 p{
+    border-right: 1px solid #000;
+    padding-right: 5px;
+}
+
+.main_title a{
+    text-decoration: none;
+    color: #0071e3;
+    font-size: 20px;
+    margin: 0 15px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.main_title a:hover{
+    text-decoration: underline;
+}
+
+/* for block3 */
+
+.mt2{
+    width: 45%;
+}
+
+.mt2 h1,
+.mt2 h2{
+    color: white ;
+}
+
+/* for  */
+
+.card_title{
+    margin-top: 5%;
+    width: 95%  !important;
+}
+
+.card_title h1{
+    font-size: 35px;
+}
+
+.card_title h2{
+    font-size: 25px;
+    margin: 2% 0;
+}
+
+.card_title a{
+    font-size: 18px;
+}
+
+.card_title h4{
+    font-size: 14px;
+    color: #9f101a;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.card:nth-child(4) .card_title a{
+    color: #00db57;
+}
+
+/* first block  */
+
+.main_block1{
+    background: #f6f6f8;
+}
+
+.block1_banner{
+    margin: 1% auto;
+    max-width: 800px;
+    height: 47vh;
+    background: url("../img/Screenshot_1_2_large.png") center / cover;
+}
+
+/* second block */
+
+.main_block2{
+    background: #efe5fe;
+}
+
+.block2_banner{
+    margin: 1% auto;
+    max-width: 800px;
+    height: 47vh;
+    background: url("../img/apple_iphone-12-spring21_durable-design-display_us_04202021.jpg") center / cover;
+}
+
+/* third blovk */
+
+.main_block3{
+    background: #000000;
+}
+
+.block3_banner{
+    margin: 1% auto;
+    max-width: 800px;
+    height: 47vh;
+    background: url("../img/banner-7.jpg") top / cover;
+}
+
+/* fourth block */
+
+.block4_inline{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.block4_inline .card{
+    display: flex;
+    justify-content: center;
+    max-width: 48%;
+    width: 48%;
+    height: 75vh;
+    margin: 1%;
+    background: black;
+    overflow: hidden;
+}
+
+.card a img{
+    max-width: 100%;
+}
+
+.card:nth-child(2) a img{
+    max-width: 80%;
+}
+
+.card:nth-child(3){
+    background: #f6f6f8;
+}
+
+.card:nth-child(3) a img{
+    max-width: 85%;
+    margin-top: 5%;
+}
+
+.card:nth-child(4) a img{
+    max-width: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* script */
+
+
+
+
+/*       */
+
+@media (max-width:992px) {
+    .mt2{
+        width: 60%;
+    }
+    .main_title{
+        width: 50%;
+    }
+}
+
+@media (max-width:892px) {
+    .mt2{
+        width: 80%;
+    }
+}
+
+@media (max-width:766px) {
+    .haeder_inline .list li a{
+        display: none;
+    }
+
+    .a1{
+        display: block;
+        font-size: 18px;
+        color: white;
+    }
+    
+}
+
+@media (max-width:730px) {
+    .block1_banner{
+        margin: 1% auto;
+        max-width: 400px;
+        height: 80vh;
+        background: url("../img/imac2.jpg") bottom / cover;
+    }
+    .block2_banner{
+        margin: 1% auto;
+        max-width: 700px;
+        height: 80vh;
+        background: url("../img/iphone2.jpg") bottom / cover;
+    }
+    .block3_banner{
+        margin: 1% auto;
+        max-width: 700px;
+        height: 80vh;
+        background: url("../img/pro_max_2.png") bottom / cover;
+    }
+}
+
+@media (max-width:648px) {
+    .main_title{
+        width: 70%;
+    }
+}
