@@ -1,5 +1,5 @@
 html{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 body{
     margin: 0;
@@ -124,7 +124,8 @@ body{
 
 
 /* mian */
-main{
+main,
+footer{
     position: relative;
     top: 7vh;
 }
@@ -193,7 +194,7 @@ main{
 }
 
 .card_title h2{
-    font-size: 25px;
+    font-size: 20px;
     margin: 2% 0;
 }
 
@@ -264,10 +265,10 @@ main{
 .block4_inline .card{
     display: flex;
     justify-content: center;
-    max-width: 48%;
-    width: 48%;
-    height: 75vh;
-    margin: 1%;
+    max-width: 49%;
+    width: 49%;
+    height: auto;
+    margin-bottom: 1%;
     background: black;
     overflow: hidden;
 }
@@ -293,11 +294,126 @@ main{
     max-width: 65%;
 }
 
+.card:nth-child(5){
+    background: #fbfbfd;
+}
+
+.card:nth-child(6){
+    background: url("../img/gggg.png") center / cover;
+    height: 75vh;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background: #f6f6f8;
+}
+
+/* main block 5 */
+
+.main_block5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_block5 ul{
+    padding: 0;
+    padding-bottom: 1%;
+    list-style: none;
+    max-width: 900px;
+    width: 900px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.main_block5 ul li{
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 1%;
+}
 
 
+/* main blvck 6 */
 
+.main_block6{
+    width: 100%;
+}
 
+.main_block6 .block6_inline{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
+.block6_inline ul{
+    list-style: none;
+    padding: 0;
+}
+
+.block6_inline ul h1,
+.block6_inline ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 1%;
+}
+
+.block6_inline ul li{
+    margin-bottom: 2%;
+}
+
+.block6_inline ul li a{
+    color: gray;
+}
+
+.block6_inline ul li a:hover{
+    text-decoration: underline;
+}
+
+/* accardion */
+
+.accordion{
+    display: none;
+}
+
+/* down footer */
+
+.down_footer{
+    width: 900px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+.down_footer p{
+    color: gray;
+    font-size: 13px;
+    margin: 0;
+}
+
+.down_footer a{
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+    font-size: 13px;
+    border-right: 1px solid rgb(211, 211, 211);;
+    padding-right: 7px;
+    margin: 0 5px;
+}
+
+.down_footer a:hover{
+    text-decoration: underline;
+    color: rgb(83, 83, 83);
+}
+
+.down_footer a:nth-child(5),
+.down_footer .none1{
+    border-right: 0;
+}
 
 
 
@@ -340,6 +456,13 @@ main{
     .main_title{
         width: 50%;
     }
+    .block4_inline .card{
+        min-width: 100%;
+    }
+    .main_block6 .block6_inline,
+    .main_block5 ul{
+        max-width: 750px;
+    }
 }
 
 @media (max-width:892px) {
@@ -352,16 +475,11 @@ main{
     .haeder_inline .list li a{
         display: none;
     }
-
     .a1{
         display: block;
         font-size: 18px;
         color: white;
     }
-    
-}
-
-@media (max-width:730px) {
     .block1_banner{
         margin: 1% auto;
         max-width: 400px;
@@ -380,6 +498,30 @@ main{
         height: 80vh;
         background: url("../img/pro_max_2.png") bottom / cover;
     }
+    .main_block5 ul,
+    .down_footer{
+        max-width:95%;
+    }
+    .main_block6 .block6_inline ul{
+        display: none;
+    }
+    .accordion-body ul{
+        display: block !important;
+    }
+    .accordion{
+        max-width: 95%;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    .block6_inline{
+        display: block !important;
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width:730px) {
+
 }
 
 @media (max-width:648px) {
